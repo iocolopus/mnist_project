@@ -49,7 +49,11 @@ def process_img(img):
 def predict_pytorch(img, model_name):
     from torch import nn
 
-    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    try:
+        device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    except Exception as e:
+        print(f"Error checking for CUDA: {e}")
+        device = torch.device("cpu")
 
     path = "models/pytorch/"
 
