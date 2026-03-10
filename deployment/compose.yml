@@ -2,7 +2,7 @@ services:
   web:
     build:
       context: ..
-      dockerfile: /deployment/Dockerfile.front
+      dockerfile: deployment/Dockerfile.front
     ports:
       - "8081:80"
     volumes:
@@ -13,9 +13,9 @@ services:
   back:
     build:
       context: ..
-      dockerfile: /deployment/Dockerfile.back
+      dockerfile: deployment/Dockerfile.back
     ports:
-      - "8000:8000"
+      - "8080:8000"
     volumes:
       - ../back_end:/usr/src/app
     networks:
