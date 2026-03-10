@@ -15,7 +15,7 @@ function config_ctx(){
 }
 
 function load_models(){
-    fetch("http://localhost:8000/models")
+    fetch(api_dir + "/models")
     .then(response => response.json())
     .then(data => {
         const model_select = document.querySelector("#model_select");
@@ -135,7 +135,7 @@ send_button.addEventListener("click", () => {
         formdata.append("model_name", model);
         formdata.append("img", blob, "drawing.png");
 
-        fetch("http://localhost:8000/content", {
+        fetch(api_dir + "/content", {
             method: "POST",
             body: formdata
     })
