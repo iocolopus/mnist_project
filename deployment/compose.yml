@@ -1,0 +1,9 @@
+services:
+  web:
+    build:
+      context: ..
+      dockerfile: deployment/Dockerfile
+    ports:
+      - "8081:80"
+    volumes:
+      - ../front_end:/usr/share/nginx/html
