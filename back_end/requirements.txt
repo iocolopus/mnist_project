@@ -1,15 +1,12 @@
-# Servidor Web
-fastapi
-uvicorn[standard]
-python-multipart  # Necesario para recibir Form y File (UploadFile)
+fastapi==0.111.0
+uvicorn[standard]==0.29.0
+python-multipart==0.0.9
 
-# Ciencia de Datos y ML
-numpy
-joblib
-scikit-learn
-matplotlib
+numpy==1.26.4
+joblib==1.4.2
+scikit-learn==1.4.2
 
-# Visión Artificial (Versión headless para ahorrar RAM y evitar errores de GUI)
-opencv-python-headless
+opencv-python-headless==4.9.0.80
 
-# Deep Learning (Versión solo CPU para ARM)
+torch==2.2.2
+torchvision==0.17.2
