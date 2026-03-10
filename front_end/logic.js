@@ -4,7 +4,7 @@ const debug_p = document.querySelector("#debug");
 
 let clicked_canvas = false;
 let ctx = canvas.getContext("2d");
-const api_dir = "http://192.168.1.38:8080"
+const api_dir = "https://api.iocolopus.quest"
 
 function config_ctx(){
     ctx.reset();
