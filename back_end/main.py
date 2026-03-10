@@ -2,7 +2,6 @@ import fastapi
 import cv2 as cv
 import joblib
 import numpy as np
-import matplotlib.pyplot as plt
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi import Form, File, UploadFile
 import os

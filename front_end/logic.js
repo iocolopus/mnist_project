@@ -4,7 +4,7 @@ const debug_p = document.querySelector("#debug");
 
 let clicked_canvas = false;
 let ctx = canvas.getContext("2d");
-const api_dir = "http://localhost:8000"
+const api_dir = "http://192.168.1.38:8080"
 
 function config_ctx(){
     ctx.reset();
